@@ -1,7 +1,7 @@
 # lyapunov-stability-fluid-dynamics
 Tools for identifying Lyapunov exponents (LEs) and Covariant Lyapunov Vectors (CLVs) of chaotic flows (OpenFOAM + MATLAB)
 
-# Lyapunov and Stability Analysis of Chaotic Flows
+# Lyapunov Stability Analysis of Chaotic Flows
 
 This repository contains the codebase developed for our study on the chaotic dynamics of flow past two side-by-side square cylinders. It provides tools to compute Lyapunov exponents (LEs), Covariant Lyapunov Vectors (CLVs) using OpenFOAM and MATLAB.
 
