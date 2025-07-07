@@ -1,0 +1,515 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  10
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    p
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    }
+    
+    p_d
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    }    
+    
+    p_d2
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d3
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d4
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d5
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d6
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d7
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d8
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d9
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d10
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d11
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d12
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d13
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d14
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d15
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+    
+    p_d16
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-08;
+        relTol          0.05;
+    } 
+                                                                   
+
+    pFinal
+    {
+        $p;
+        relTol          0;
+    }
+    
+    p_dFinal
+    {
+        $p_d;
+        relTol          0;
+    }
+    
+    p_d2Final
+    {
+        $p_d2;
+        relTol          0;
+    }
+    
+    p_d3Final
+    {
+        $p_d3;
+        relTol          0;
+    }
+    
+    p_d4Final
+    {
+        $p_d4;
+        relTol          0;
+    }
+    
+    p_d5Final
+    {
+        $p_d5;
+        relTol          0;
+    }
+    
+    p_d6Final
+    {
+        $p_d6;
+        relTol          0;
+    }
+    
+    p_d7Final
+    {
+        $p_d7;
+        relTol          0;
+    }
+    
+    p_d8Final
+    {
+        $p_d8;
+        relTol          0;
+    }
+    
+    p_d9Final
+    {
+        $p_d9;
+        relTol          0;
+    }
+    
+    p_d10Final
+    {
+        $p_d10;
+        relTol          0;
+    }
+    
+    p_d11Final
+    {
+        $p_d11;
+        relTol          0;
+    }
+    
+    p_d12Final
+    {
+        $p_d12;
+        relTol          0;
+    }
+    
+    p_d13Final
+    {
+        $p_d13;
+        relTol          0;
+    }
+    
+    p_d14Final
+    {
+        $p_d14;
+        relTol          0;
+    }
+    
+    p_d15Final
+    {
+        $p_d;
+        relTol          0;
+    }
+    
+    p_d16Final
+    {
+        $p_d16;
+        relTol          0;
+    }                                                            
+
+    U
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d2
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d3
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d4
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d5
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d6
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d7
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d8
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d9
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d10
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d11
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d12
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d13
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d14
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }
+    
+    U_d15
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }                                                        
+    
+    U_d16
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-08;
+        relTol          0;
+    }  
+    
+    UFinal
+    {
+        $U;
+        relTol          0;
+    }
+    
+    U_dFinal
+    {
+        $U_d;
+        relTol          0;
+    }
+    
+    U_d2Final
+    {
+        $U_d2;
+        relTol          0;
+    }
+    
+    U_d3Final
+    {
+        $U_d3;
+        relTol          0;
+    }
+    
+    U_d4Final
+    {
+        $U_d4;
+        relTol          0;
+    }
+    
+    U_d5Final
+    {
+        $U_d5;
+        relTol          0;
+    }
+    
+    U_d6Final
+    {
+        $U_d6;
+        relTol          0;
+    }
+    
+    U_d7Final
+    {
+        $U_d7;
+        relTol          0;
+    }
+    
+    U_d8Final
+    {
+        $U_d8;
+        relTol          0;
+    }
+    
+    U_d9Final
+    {
+        $U_d9;
+        relTol          0;
+    }
+    
+    U_d10Final
+    {
+        $U_d10;
+        relTol          0;
+    }
+    
+    U_d11Final
+    {
+        $U_d11;
+        relTol          0;
+    }
+    
+    U_d12Final
+    {
+        $U_d12;
+        relTol          0;
+    }
+    
+    U_d13Final
+    {
+        $U_d13;
+        relTol          0;
+    }
+    
+    U_d14Final
+    {
+        $U_d14;
+        relTol          0;
+    }
+    
+    U_d15Final
+    {
+        $U_d15;
+        relTol          0;
+    }
+    
+    U_d16Final
+    {
+        $U_d16;
+        relTol          0;
+    }
+    
+}
+
+PIMPLE
+{
+    nOuterCorrectors    2;
+    nCorrectors         2;
+    nNonOrthogonalCorrectors 0;
+    pRefCell            0;
+    pRefValue           0;
+}
+
+relaxationFactors
+{
+    equations
+    {
+        ".*"   1;
+    }
+}
+
+// ************************************************************************* //
